@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS article
+(
+    id SERIAL PRIMARY KEY,
+    version INTEGER NOT NULL,
+    status_changed_at TIMESTAMP WITH TIME ZONE NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS story
+(
+    id SERIAL PRIMARY KEY,
+    version INTEGER NOT NULL,
+    status_changed_at TIMESTAMP WITH TIME ZONE NOT NULL
+);
